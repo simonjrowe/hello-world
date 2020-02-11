@@ -1,0 +1,1 @@
+powershell.exe Write-Host "hello world"
