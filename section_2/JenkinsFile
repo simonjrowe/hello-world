@@ -35,8 +35,11 @@ pipeline {
 
         stage ('Deploy') {
 
-            echo 'Deploy to Servers'
-            
+            steps {
+
+                echo 'Deploy to Servers'
+
+            }
         }
     }
 }
