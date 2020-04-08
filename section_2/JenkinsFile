@@ -8,9 +8,6 @@ pipeline {
 
             steps {
 
-                echo 'Run PS Test'
-                cmd "ipconfig /all"
-
             }
         }
     }
