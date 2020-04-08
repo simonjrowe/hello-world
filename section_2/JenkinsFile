@@ -18,7 +18,8 @@ pipeline {
 
             steps {
 
-                echo 'Testing...'         
+                echo 'Testing...' 
+                cmd "ipconfig /all"       
 
             }
         }
