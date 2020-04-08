@@ -1,43 +1,15 @@
-#!/usr/bin/groovy
-
 pipeline {
+    
     agent any
 
     stages {
 
-        stage ('Build') {
+        stage ('Powershell Test') {
 
             steps {
 
-                echo 'Building...'
-
-            }
-        }
-
-        stage ('Test') {
-
-            steps {
-
-                echo 'Testing...'         
-
-            }
-        }
-
-        stage ('SonarQube') {
-
-            steps {
-
-                echo 'Testing SQube...'
-
-            }
-
-        }
-
-        stage ('Deploy') {
-
-            steps {
-
-                echo 'Deploy to Servers'
+                echo 'Run PS Test'
+                cmd "ipconfig /all"
 
             }
         }
